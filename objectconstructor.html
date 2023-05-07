@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let student1 = {
+      //     name:"shapla",
+      //     age:30,
+      //     cgpa:3.70,
+      //     language:["bangla","english","urdu","hindi"]
+      // }
+      // let student2 = {
+      //     name:"tusi",
+      //     age:20,
+      //     cgpa:3.90,
+      //     language:["bangla","english","chinese","hindi"]
+      // }
+      // let student3 = {
+      //     name:"sara",
+      //     age:25,
+      //     cgpa:3.50,
+      //     language:["bangla","english","thai","hindi"]
+      // }
+
+      // console.log(student1.name);
+      // console.log(student2.age);
+      // console.log(student3.language);
+
+      function Student(name, age, cgpa, language) {
+        this.name = name;
+        this.age = age;
+        this.cgpa = cgpa;
+        this.language = language;
+
+        this.display = function () {
+          console.log(this.name);
+          console.log(this.age);
+          console.log(this.cgpa);
+          console.log(this.language);
+        };
+      }
+      let student1 = new Student("shapla", 30, 3.6, [
+        "bangla",
+        "english",
+        "hindi",
+      ]);
+      let student2 = new Student("shapla", 20, 3.5, [
+        "bangla",
+        "english",
+        "thai",
+      ]);
+      let student3 = new Student("shapla", 40, 3.8, [
+        "bangla",
+        "english",
+        "chinese",
+      ]);
+      console.log(student1.age);
+
+      student1.display();
+    </script>
+  </body>
+</html>

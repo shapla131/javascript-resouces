@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //     console.clear();
+    //   let score = [24, 54, 34, 52, 76];
+
+    //   function heighestScore(score) {
+    //     console.log(score);
+    //     let max = score[0];
+    //     for(i=1;i<score.length;i++){
+    //         if(max<score[i])
+            
+    //         {
+    //             max=score[i];
+    //         }
+    //     } return max;
+    //   }
+      
+    //   let maxvalue=heighestScore(score);
+    //   console.log(maxvalue);
+
+     let playersInfo = [["shapla",40],["tusi",60],["sara",50],["misha",45],["lima",55]];
+
+     function heightestRunScorer(playersinfo)
+
+     {
+
+        console.log(playersInfo);
+        var heighestScore = playersInfo[0][0];
+        var heighestScore = playersInfo[0][1];
+
+        for(i=1;i<playersInfo.length;i++){
+            if(heighestScore<playersInfo[i][1])
+            {
+                heighestScore=playersInfo[i][1];
+                heighestScore=playersInfo[i][0];
+            }
+        }
+        return heighestScore;
+    
+
+     } var name=heightestRunScorer(playersInfo);
+     console.log(name);
+
+
+
+    </script>
+  </body>
+</html>
