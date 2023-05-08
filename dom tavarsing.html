@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>heading</h1>
+    <ol class="student-list">
+      <li class="studentA">child1</li>
+      <li class="studentB">child2</li>
+      <li class="studentC">child</li>
+    </ol>
+
+    <script>
+      var studentList = document.querySelector(".student-list");
+      var studentA = studentlist.querySelector(".studentA");
+
+      var children = studentlist.children;
+      var studentA = studentlist.children[0];
+
+      var studentA = document.querySelector("li");
+      var parent = studentA.parentElement;
+
+      var studentA = document.querySelector("li");
+      var studentB = studentA.nextElementSibling;
+      var studentc = studentB.nextElementSibling;
+      //  previous element
+      var studentC = document.querySelector("li")[2];
+      var studentB = studentC.previousElementSibling;
+
+      // parent children index
+      var studentA = document.querySelector("li");
+      var studentlist = studentA.parentElements;
+      var studentC = studentlist.children[2];
+    </script>
+  </body>
+</html>

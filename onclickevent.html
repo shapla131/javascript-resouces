@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="myMessage1()">click me</button>
+    <button onclick="myMessage2()">click me</button>
+    <p id="pId">Lorem ipsum dolor sit amet.</p>
+
+    <p onclick="myMessage3()">demo</p>
+
+    <button onclick="shapla()">click me</button>
+    <button onclick="tusi()">click me</button>
+    <br />
+    <img id="imgId" src="#" alt="" height="300" width="300" />
+
+    <br />
+
+    <button onclick="shapla1()">shapla</button>
+    <p id="shaplaId">Lorem, ipsum dolor.</p>
+
+    <script>
+      function myMessage1() {
+        document.querySelector("#pId").innerHTML =
+          "you have clicked on button1";
+      }
+      function myMessage2() {
+        document.querySelector("#pId").innerHTML =
+          "you have clicked on button2";
+      }
+      function myMessage3() {
+        alert("this is a paragraph");
+      }
+
+      function shapla() {
+        let myimg = document.querySelector("#imgId");
+        myimg.src = "image/shapla.jpg";
+      }
+      function tusi() {
+        let myimg = document.querySelector("#imgId");
+        myimg.src = "image/tusi.jpg";
+      }
+
+      function shapla1() {
+        document.getElementById("shaplaId").innerHTML = "this is shapla";
+      }
+    </script>
+  </body>
+</html>

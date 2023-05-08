@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="prev()">previous</button>
+    <img src="/image/shapla.JPG" alt="" hright="300" width="300" />
+    <button onclick="next()">next</button>
+
+    <script>
+      var count = 0;
+      var photos = ["/image/shapla.JPG", "/image/img1.JPG", "/image/tusi.JPG"];
+      var imgtag = document.querySelector("img");
+
+      function next() {
+        count++;
+        if (count >= photos.length) {
+          count = 0;
+          imgtag.src = photos[count];
+        } else {
+          imgtag.src = photos[count];
+        }
+      }
+      function prev() {
+        count--;
+        if (count < 0) {
+          count = photos.length - 1;
+          imgtag.src = photos[count];
+        } else {
+          imgtag.src = photos[count];
+        }
+      }
+    </script>
+  </body>
+</html>

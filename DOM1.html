@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="#">visit google</a>
+
+    <div id="my-div" class="my-class" style="background-color: brown">
+      <h1>Heading</h1>
+      <h1>Heading</h1>
+    </div>
+    <script>
+      var heading3 = document.createElement("h1");
+      var text = document.createTextNode("this is heading3");
+      heading3.appendChild(text);
+      var mydiv = document.getElementById("my-div");
+      mydiv.appendChild(heading3);
+      var heading2 = document.getElementsByTagName("h1")[0];
+      mydiv.removeChild(heading2);
+
+      var heading0 = document.createElement("h1");
+      var text0 = document.createTextNode("heading0");
+      heading0.appendChild(text0);
+      mydiv.appendChild(heading0);
+      var heading1 = document.getElementsByTagName("h1")[0];
+      mydiv.insertBefore(heading0, heading1);
+    </script>
+  </body>
+</html>
