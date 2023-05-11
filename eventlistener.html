@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .shapla {
+        font-size: 50px;
+        color: brown;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <button>click me</button>
+
+    <h1>hello shapla</h1>
+    <script>
+      //   document.querySelector("button").addEventListener("click",myFunction);
+
+      //   function myFunction(){
+      //       alert("hello");
+      //   }
+
+      // document.querySelector("button").addEventListener("click" , function(){
+      //     alert("hello");
+      // });
+
+      // document.querySelector("h1").addEventListener("click",function(){
+
+      //     alert("hi");
+      // });
+      var myvar = document.querySelector("h1");
+      myvar.addEventListener("mouseover", function () {
+        myvar.classList.add("shapla");
+      });
+      var myvar = document.querySelector("h1");
+      myvar.addEventListener("mouseout", function () {
+        myvar.classList.remove("shapla");
+      });
+    </script>
+  </body>
+</html>

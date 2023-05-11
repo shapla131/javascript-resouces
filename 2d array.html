@@ -18,15 +18,15 @@
 
       function heightestRunScorer(playersinfo) {
         console.log(playersInfo);
-        var heighestScore = playersInfo[0][0];
+        var heighestScorer = playersInfo[0][0];
         var heighestScore = playersInfo[0][1];
-        for (i = 1; i < playersInfo.length; i++) {
+        for (var i = 1; i < playersInfo.length; i++) {
           if (heighestScore < playersInfo[i][1]) {
             heighestScore = playersInfo[i][1];
-            heighestScore = playersInfo[i][0];
+            heighestScorer = playersInfo[i][0];
           }
         }
-        return heighestScore;
+        return heighestScorer;
       }
 
       var name = heightestRunScorer(playersInfo);

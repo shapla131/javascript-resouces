@@ -10,13 +10,33 @@
     <ul id="ulId"></ul>
 
     <script>
-      var myFruit = "";
-      var fruits = ["mango", "banana", "apple", "orange", "kiwi", "grape"];
-      for (var i = 0; i < fruits.length; i++) {
-         myFruit += "<li>" + fruits[i] + "</li>"
-        //myFruit = `<li>${fruits[i]}</li>`;
+      var score = [
+        ["shapla", 50],
+        ["tusi", 60],
+        ["sara", 80],
+        ["misha", 40],
+      ];
+      function heighestRunScorer(score) {
+        console.log(score);
+        var heighestScorer = score[0][0];
+        var heighestScore = score[0][1];
+        for (var i = 1; i < score.length; i++) {
+          if (heighestScore < score[i][1]) {
+            heighestScore = score[i][1];
+            heighestScorer = [i][0];
+          }
+        }
+        return heighestScorer;
       }
-      document.getElementById("ulId").innerHTML = myFruit;
+      var name = heighestRunScorer(score);
+      console.log(name);
+      // var myFruit = "";
+      // var fruits = ["mango", "banana", "apple", "orange", "kiwi", "grape"];
+      // for (var i = 0; i < fruits.length; i++) {
+      //    //myFruit += "<li>" + fruits[i] + "</li>"
+      //   myFruit += `<li>${fruits[i]}</li>`;
+      // }
+      // document.getElementById("ulId").innerHTML = myFruit;
 
       //     console.clear();
       //   let score = [24, 54, 34, 52, 76];
