@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <label for="name"
+      >Name
+      <input type="text" name="name" class="input-name" id="input-name" />
+    </label> -->
+    <!-- <div>
+        <h2>programming language</h2>
+    <label for="program">
+        <input type="checkbox" name="program" id="program" value="C">C
+    </label>
+    <label for="program">
+        <input type="checkbox" name="program" id="program" value="java">java
+    </label>
+
+    </div> -->
+<label for="department">Department : </label>
+     <select name="department" id="department">
+        <option value="cse">cse</option>
+        <option value="eee">eee</option>
+        <option value="llb">llb</option>
+     </select>
+    <script>
+        // // var input=document.querySelector("input[name=name]");
+        // // input.addEventListener("change" , changehandler)
+        // // function changehandler(e){
+        // //     //console.log("changed");
+        // //     //console.log("changed");
+        // //     //console.log(e.target.className);
+        // //     //console.log(e.target.id);
+        // //     console.log(e.target.value);
+        // // }
+
+        // var programs=document.querySelectorAll("input[name=program]");
+        //  //console.log(programs);
+        //  Array.from(programs).map((program) => {
+        //     addEventListener("change",programhandler)
+
+
+        //  }); 
+
+        //  function programhandler(e){
+        //     if(e.target.checked){
+        //         console.log(e.target.value);
+        //     }
+
+        //  }
+
+        var department=document.querySelector("#department");
+        department.addEventListener("change", departmenthandler);
+         function departmenthandler(e){
+            //console.log("selected");
+            console.log(e.target.value);
+         }
+
+        
+
+    </script>
+  </body>
+</html>
+ 
