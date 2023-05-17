@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <input type="text">
+  </head>
+  <body>
+    <input type="text" />
     <p></p>
     <script>
-        var input=document.querySelector("input");
-        var p=document.querySelector("p");
-        input.addEventListener("copy",function(){
-           p.innerText="you have copied";
-            //console.log("copied");
-        });
-        var input=document.querySelector("input");
-        input.addEventListener("cut",function(){
-            //console.log("cut");
-            p.innerText="you have cut";
-        });
-        var input=document.querySelector("input");
-        input.addEventListener("paste",function(){
-            //console.log("pasted");
-            p.innerText="you have pasted";
-        });
+      var input = document.querySelector("input");
+      var p = document.querySelector("p");
+      input.addEventListener("copy", function () {
+        p.innerText = "you have copied";
+        //console.log("copied");
+      });
+      var input = document.querySelector("input");
+      input.addEventListener("cut", function () {
+        //console.log("cut");
+        p.innerText = "you have cut";
+      });
+      var input = document.querySelector("input");
+      input.addEventListener("paste", function () {
+        //console.log("pasted");
+        p.innerText = "you have pasted";
+      });
     </script>
-</body>
+  </body>
 </html>
