@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .design {
+        background-color: orange;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" />
+    <script>
+      var input = document.querySelector("input");
+      input.addEventListener("blur", function () {
+        input.style.backgroundColor = "violet";
+        input.style.padding = "0px";
+        //console.log("blur occured");
+      });
+      var input = document.querySelector("input");
+      input.addEventListener("focus", function (e) {
+        input.classList.add("design");
+        // input.style.backgroundColor="orange";
+        // input.style.padding="20px";
+        //console.log("focus occured");
+      });
+    </script>
+  </body>
+</html>
