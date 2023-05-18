@@ -24,16 +24,15 @@
 
       //prompt
       function welcomeMessage() {
-        let h1=document.createElement("h1");
+        let h1 = document.createElement("h1");
         let text;
         let name = prompt("enter name : ");
         if (name === null || name === "") {
           text = "no name found";
-        
         } else {
-          text = "welcome" + name;
+          text = "welcome " + name;
         }
-        let textnode= document.createTextNode(text);
+        let textnode = document.createTextNode(text);
         h1.appendChild(textnode);
         document.body.appendChild(h1);
       }
