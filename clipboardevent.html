@@ -11,17 +11,19 @@
     <p></p>
     <script>
       var input = document.querySelector("input");
+
       var p = document.querySelector("p");
+
       input.addEventListener("copy", function () {
         p.innerText = "you have copied";
         //console.log("copied");
       });
-      var input = document.querySelector("input");
+      //var input = document.querySelector("input");
       input.addEventListener("cut", function () {
         //console.log("cut");
         p.innerText = "you have cut";
       });
-      var input = document.querySelector("input");
+      // var input = document.querySelector("input");
       input.addEventListener("paste", function () {
         //console.log("pasted");
         p.innerText = "you have pasted";
