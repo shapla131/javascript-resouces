@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="myCanvas"></canvas>
+
+    <script>
+      let c = document.getElementById("myCanvas");
+
+      let ctx = c.getContext("2d");
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = "black";
+      ctx.strokeRect(12, 12, 398, 280);
+      ctx.fillStyle = "green";
+      ctx.fillRect(10, 10, 400, 278);
+
+      //circle
+      let centerX = c.width / 2;
+      let centerY = c.height / 2;
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, 50, 2 * Math.PI, false);
+      ctx.fillStyle = "red";
+      ctx.fill();
+      ctx.stroke();
+    </script>
+  </body>
+</html>
