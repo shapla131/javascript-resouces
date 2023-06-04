@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+    //     import{text,setText} from "./module.js"
+    //     console.log(text);
+
+    //     setText("goodbye");
+    //     console.log(text);
+
+    class Student{
+        constructor(id,name){
+            this.id=id;
+            this.name=name;
+        }
+        set Studentname(name){
+            this.name=name;
+        }
+        get Studentinfo(){
+            return `${this.id} ${this.name}`
+        }
+    }
+     let s1 = new Student(101,"shapla");
+    //  console.log(s1);
+    //  console.log(s1.name);
+    //  console.log(s1.id);
+
+     s1.Studentname= "tushi";
+    //  console.log(s1.name);
+    console.log(s1.Studentinfo);
+
+
+    </script>
+</body>
+</html>
